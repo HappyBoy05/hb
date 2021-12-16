@@ -12,7 +12,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>This Person</a>\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a>\n○ Channel : @HB4All\n○ Support Bot : @HB4All_Bot</b>",
             disable_web_page_preview 
-            reply_markup = InlineKeyboardMarkup(
+            reply_markup = InlineKeyboardMarkup( = True,
                 [
                     [
                         InlineKeyboardButton("🔒 Close", callback_data = "close")
